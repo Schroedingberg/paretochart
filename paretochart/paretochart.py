@@ -1,6 +1,5 @@
 from operator import itemgetter
 import matplotlib.pyplot as plt
-
 def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
            data_args=(), data_kw={}, line_args=(), line_kw={},
            limit_kw={}):
@@ -194,7 +193,7 @@ def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
     
     # adjust the second axis if cumplot=True
     if cumplot:
-        yt = [str(int(it))+r'%' for it in ax2.get_yticks()]
+        yt = [str(int(it))+r'\%' for it in ax2.get_yticks()]
         ax2.set_yticklabels(yt)
 
     if cumplot:
